@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <title>Typing Game :)</title>
+    </head>
+
+    <body>
+      <div>
+      <div class="initial" id="initial-page">
+        <center>
+        <fieldset><h1><b>WELCOME TO TYPING GAME</b></h1><br><br>
+          <p>@ Enter the details before play </p><br>
+          <input type="text" placeholder="Player Name" name="player-name" />
+          <br><br>
+          <input type="number" placeholder="Time-Limit in sec" value="" class="time-limit" />
+          <br><br>
+          <input type="number" placeholder="Text-Length" value="" class="text-length" />
+          <br><br><br>
+          <button class="btn-start">Start Game</button>
+        </fieldset></center>
+      </div>
+
+      <div class="hidden" id="original-game">
+        <div class="wrapper clearfix"><br><br>
+          <div class="player-name" id="player-name"><center><b>Player Name : player </b></center></div>
+          <br><center><p id="text"> </p></center><br></br>
+            <center><textarea placeholder="Some text..." id="user-text" value=""></textarea></center>
+          <button class="btn-new">New Game</button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    </body>
+</html>
